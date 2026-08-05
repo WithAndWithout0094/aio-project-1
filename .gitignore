@@ -1,0 +1,21 @@
+﻿# 가상환경 (용량이 크고 각자 다시 만들면 됨)
+.venv/
+venv/
+
+# 비밀 키 — 절대 커밋 금지
+.env
+.env.local
+*.pem
+*.key
+
+# 파이썬 캐시
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# DB 파일 (개인 데이터 포함 가능)
+*.db
+*.sqlite3
+
+# 로그
+*.log
