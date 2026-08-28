@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 840" role="img" aria-label="W2 채팅 화면(대화 중) 와이어프레임 — Claude">
+  <style>
+    text { font-family: 'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',-apple-system,'Segoe UI',sans-serif; }
+    .title { font-size: 18px; font-weight: 700; fill: #111827; }
+    .sub   { font-size: 12.5px; fill: #6b7280; }
+    .h     { font-size: 13px; font-weight: 700; fill: #111827; }
+    .d     { font-size: 11.5px; fill: #6b7280; }
+    .num   { font-size: 11px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    .bnum  { font-size: 10.5px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    .pt    { font-size: 11.5px; fill: #111827; }
+    .pg    { font-size: 12px; fill: #9ca3af; }
+  </style>
+
+  <!-- card background -->
+  <rect x="1" y="1" width="778" height="838" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="32" y="42" class="title">W2 · 채팅 화면 — 대화 중</text>
+  <text x="32" y="64" class="sub">질문 ↔ 답변 루프가 실제로 도는 곳 · 상단에는 대화 제목</text>
+
+  <!-- phone frame -->
+  <rect x="36" y="92" width="336" height="708" rx="26" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+
+  <!-- status bar -->
+  <text x="64" y="122" class="pg" font-size="10.5">9:41</text>
+  <rect x="326" y="112" width="22" height="11" rx="3" fill="none" stroke="#9ca3af"/>
+  <rect x="328" y="114" width="13" height="7" rx="1.5" fill="#9ca3af"/>
+  <rect x="349" y="115" width="3" height="5" rx="1" fill="#9ca3af"/>
+
+  <!-- top bar -->
+  <g stroke="#374151" stroke-width="2.2" stroke-linecap="round">
+    <line x1="62" y1="143" x2="84" y2="143"/>
+    <line x1="62" y1="150" x2="84" y2="150"/>
+    <line x1="62" y1="157" x2="84" y2="157"/>
+  </g>
+  <text x="204" y="155" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">면접 준비 도와줘</text>
+  <rect x="330" y="137" width="26" height="26" rx="7" fill="none" stroke="#374151" stroke-width="1.8"/>
+  <line x1="336" y1="151" x2="347" y2="140" stroke="#374151" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="336" y1="151" x2="339" y2="151" stroke="#374151" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="38" y1="176" x2="370" y2="176" stroke="#e5e7eb"/>
+
+  <!-- user bubble (right, narrow, gray) -->
+  <rect x="176" y="200" width="180" height="52" rx="16" fill="#e9ecef"/>
+  <text x="192" y="221" class="pt">다음 주에 면접이 있어.</text>
+  <text x="192" y="238" class="pt">뭐부터 준비할까?</text>
+
+  <!-- Claude answer (left, full width, no background) -->
+  <circle cx="66" cy="292" r="10" fill="#f3f4f6" stroke="#d1d5db"/>
+  <path transform="translate(66,292)" d="M0,-4.5 C0.6,-1.1 1.1,-0.6 4.5,0 C1.1,0.6 0.6,1.1 0,4.5 C-0.6,1.1 -1.1,0.6 -4.5,0 C-1.1,-0.6 -0.6,-1.1 0,-4.5 Z" fill="#9ca3af"/>
+  <text x="56" y="322" font-size="12" fill="#111827">좋아요. 이렇게 시작해 봅시다.</text>
+  <rect x="56" y="336" width="300" height="9" rx="4" fill="#e5e7eb"/>
+  <rect x="56" y="352" width="282" height="9" rx="4" fill="#e5e7eb"/>
+  <rect x="56" y="368" width="298" height="9" rx="4" fill="#e5e7eb"/>
+  <rect x="56" y="384" width="176" height="9" rx="4" fill="#e5e7eb"/>
+  <rect x="238" y="378" width="3.5" height="15" fill="#2563eb"/>
+
+  <!-- answer actions -->
+  <text x="56" y="419" font-size="12" fill="#6b7280">복사 · 👍 · 👎 · 재시도</text>
+
+  <!-- input card (2 rows) -->
+  <rect x="52" y="670" width="304" height="108" rx="18" fill="#f3f4f6" stroke="#e5e7eb"/>
+  <text x="70" y="702" class="pg">이어서 물어보세요</text>
+  <circle cx="76" cy="746" r="13" fill="#ffffff" stroke="#9ca3af" stroke-width="1.2"/>
+  <line x1="70" y1="746" x2="82" y2="746" stroke="#6b7280" stroke-width="1.6" stroke-linecap="round"/>
+  <line x1="76" y1="740" x2="76" y2="752" stroke="#6b7280" stroke-width="1.6" stroke-linecap="round"/>
+  <rect x="98" y="732" width="94" height="28" rx="14" fill="#ffffff" stroke="#d1d5db"/>
+  <text x="145" y="750" font-size="11" fill="#374151" text-anchor="middle">Sonnet 5 ⌄</text>
+  <text x="286" y="751" font-size="13">🎤</text>
+  <circle cx="330" cy="746" r="13" fill="#111827"/>
+  <rect x="323.5" y="742" width="3" height="8" rx="1.5" fill="#ffffff"/>
+  <rect x="328.5" y="739.5" width="3" height="13" rx="1.5" fill="#ffffff"/>
+  <rect x="333.5" y="742" width="3" height="8" rx="1.5" fill="#ffffff"/>
+
+  <!-- home indicator -->
+  <rect x="164" y="788" width="80" height="4" rx="2" fill="#d1d5db"/>
+
+  <!-- in-phone badges -->
+  <g>
+    <circle cx="170" cy="196" r="9" fill="#2563eb"/><text x="170" y="200" class="bnum">1</text>
+    <circle cx="350" cy="292" r="9" fill="#2563eb"/><text x="350" y="296" class="bnum">2</text>
+    <circle cx="262" cy="385" r="9" fill="#2563eb"/><text x="262" y="389" class="bnum">3</text>
+    <circle cx="248" cy="415" r="9" fill="#2563eb"/><text x="248" y="419" class="bnum">4</text>
+    <circle cx="204" cy="666" r="9" fill="#2563eb"/><text x="204" y="670" class="bnum">5</text>
+  </g>
+
+  <!-- legend -->
+  <g>
+    <circle cx="430" cy="150" r="10" fill="#2563eb"/><text x="430" y="154" class="num">1</text>
+    <text x="450" y="154" class="h">내 질문</text>
+    <text x="450" y="174" class="d">오른쪽 정렬 + 회색 배경, 폭은 좁게</text>
+    <text x="450" y="190" class="d">짧은 말이라 자리가 많이 필요 없음</text>
+
+    <circle cx="430" cy="260" r="10" fill="#2563eb"/><text x="430" y="264" class="num">2</text>
+    <text x="450" y="264" class="h">Claude 답변</text>
+    <text x="450" y="284" class="d">왼쪽 정렬 + 배경 없음 + 화면 전체 폭</text>
+    <text x="450" y="300" class="d">길고 코드 · 표까지 들어가므로 폭 확보</text>
+
+    <circle cx="430" cy="370" r="10" fill="#2563eb"/><text x="430" y="374" class="num">3</text>
+    <text x="450" y="374" class="h">스트리밍 커서</text>
+    <text x="450" y="394" class="d">단어가 만들어지는 즉시 화면에 나타남</text>
+
+    <circle cx="430" cy="480" r="10" fill="#2563eb"/><text x="430" y="484" class="num">4</text>
+    <text x="450" y="484" class="h">답변 액션</text>
+    <text x="450" y="504" class="d">복사 · 평가(👍/👎) · 재시도</text>
+
+    <circle cx="430" cy="590" r="10" fill="#2563eb"/><text x="430" y="594" class="num">5</text>
+    <text x="450" y="594" class="h">입력창은 그대로</text>
+    <text x="450" y="614" class="d">화면 이동 없이 이 자리에서 꼬리 질문</text>
+    <text x="450" y="630" class="d">질문 ↔ 답변 루프에 화면 전환 0회</text>
+  </g>
+</svg>
