@@ -64,6 +64,67 @@ Claude 앱
 
 ## 2. User Flow — 사용자 흐름
 
+### 데스크톱 — 컴퓨터로 볼 때
+
+**Flow A. 처음 쓰는 사람 — 접속부터 첫 답변까지**
+
+```mermaid
+flowchart TD
+    DA1(["브라우저에서 claude.ai 접속"]) --> DA2["로그인<br/>Google / Apple / 이메일"]
+    DA2 --> DA3["시작 화면<br/>입력창이 화면 한가운데"]
+    DA3 --> DA4["첫 질문 입력 — Enter로 전송"]
+    DA4 --> DA5["첫 답변 받음<br/>입력창은 하단으로 내려감"]
+    DA5 --> DA6{"이어서 물어볼까?"}
+    DA6 -->|"예"| DA4
+    DA6 -->|"아니요"| DA7(["탭 닫기 — 다음에 다시"])
+```
+
+**Flow B. 매일의 핵심 루프 — 질문 ↔ 답변**
+
+```mermaid
+flowchart TD
+    DB1(["claude.ai 접속"]) --> DB2["시작 화면<br/>로그인 유지 — 바로 도착"]
+    DB2 --> DB3["질문 입력 · Enter"]
+    DB3 --> DB4["답변이 실시간으로 출력됨<br/>— 스트리밍"]
+    DB4 --> DB5{"다음 행동은?"}
+    DB5 -->|"꼬리 질문"| DB3
+    DB5 -->|"새 주제"| DB6["사이드바에서 새 채팅"]
+    DB6 --> DB3
+    DB5 -->|"용무 끝"| DB7(["탭 닫기"])
+
+    classDef hot fill:#dbeafe,stroke:#2563eb,color:#1e3a8a;
+    class DB3,DB4 hot;
+```
+
+**Flow C. 지난 대화 이어가기 — 클릭 한 번**
+
+```mermaid
+flowchart LR
+    DC1["사이드바가 항상 보임<br/>서랍 여는 단계가 없음"] --> DC2{"찾는 방법"}
+    DC2 -->|"검색"| DC3["검색어 입력"]
+    DC2 -->|"스크롤"| DC4["최근 항목 목록"]
+    DC3 --> DC5["클릭 — 대화가 가운데 열림"]
+    DC4 --> DC5
+    DC5 --> DC6["이어서 질문"]
+```
+
+**Flow D. 아티팩트 만들기 — 데스크톱만의 흐름**
+
+```mermaid
+flowchart TD
+    DD1["대화에서 결과물 요청<br/>'면접 답변을 문서로 정리해 줘'"] --> DD2["오른쪽에 아티팩트 패널 열림<br/>문서 · 코드 · 화면"]
+    DD2 --> DD3["대화로 수정 지시<br/>'제목을 더 크게 해 줘'"]
+    DD3 --> DD4["패널이 새 버전으로 갱신"]
+    DD4 --> DD5{"마음에 드나?"}
+    DD5 -->|"아직"| DD3
+    DD5 -->|"예"| DD6(["복사 · 다운로드해서 사용"])
+
+    classDef panel fill:#dbeafe,stroke:#2563eb,color:#1e3a8a;
+    class DD2,DD4 panel;
+```
+
+### 모바일 — 폰으로 볼 때
+
 **Flow A. 처음 쓰는 사람 — 설치부터 첫 답변까지**
 
 ```mermaid
@@ -94,7 +155,7 @@ flowchart TD
     class B3,B4 hot;
 ```
 
-**Flow C. 지난 대화 이어가기**
+**Flow C. 지난 대화 이어가기 — 서랍을 열고 찾기**
 
 ```mermaid
 flowchart LR
