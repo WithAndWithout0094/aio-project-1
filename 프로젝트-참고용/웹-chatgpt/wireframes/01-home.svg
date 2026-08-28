@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 840" role="img" aria-label="W1 채팅 화면(빈 상태) 와이어프레임">
+  <style>
+    text { font-family: 'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',-apple-system,'Segoe UI',sans-serif; }
+    .title { font-size: 18px; font-weight: 700; fill: #111827; }
+    .sub   { font-size: 12.5px; fill: #6b7280; }
+    .h     { font-size: 13px; font-weight: 700; fill: #111827; }
+    .d     { font-size: 11.5px; fill: #6b7280; }
+    .num   { font-size: 11px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    .bnum  { font-size: 10.5px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    .pt    { font-size: 12.5px; fill: #111827; }
+    .pg    { font-size: 12px; fill: #9ca3af; }
+    .chip  { font-size: 11.5px; fill: #374151; text-anchor: middle; }
+  </style>
+
+  <!-- card background -->
+  <rect x="1" y="1" width="778" height="838" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="32" y="42" class="title">W1 · 채팅 화면 — 빈 상태</text>
+  <text x="32" y="64" class="sub">앱을 켜면 보이는 첫 화면 · 파란 번호는 오른쪽 설명과 짝</text>
+
+  <!-- phone frame -->
+  <rect x="36" y="92" width="336" height="708" rx="26" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+
+  <!-- status bar -->
+  <text x="64" y="122" class="pg" font-size="10.5">9:41</text>
+  <rect x="326" y="112" width="22" height="11" rx="3" fill="none" stroke="#9ca3af"/>
+  <rect x="328" y="114" width="13" height="7" rx="1.5" fill="#9ca3af"/>
+  <rect x="349" y="115" width="3" height="5" rx="1" fill="#9ca3af"/>
+
+  <!-- top bar -->
+  <g stroke="#374151" stroke-width="2.2" stroke-linecap="round">
+    <line x1="62" y1="143" x2="84" y2="143"/>
+    <line x1="62" y1="150" x2="84" y2="150"/>
+    <line x1="62" y1="157" x2="84" y2="157"/>
+  </g>
+  <text x="204" y="155" font-size="14" font-weight="600" fill="#111827" text-anchor="middle">ChatGPT 5 ▾</text>
+  <rect x="330" y="137" width="26" height="26" rx="7" fill="none" stroke="#374151" stroke-width="1.8"/>
+  <line x1="336" y1="151" x2="347" y2="140" stroke="#374151" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="336" y1="151" x2="339" y2="151" stroke="#374151" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="38" y1="176" x2="370" y2="176" stroke="#e5e7eb"/>
+
+  <!-- empty-state center -->
+  <circle cx="204" cy="320" r="26" fill="#f3f4f6" stroke="#d1d5db"/>
+  <path transform="translate(204,320)" d="M0,-9 C1.2,-2.2 2.2,-1.2 9,0 C2.2,1.2 1.2,2.2 0,9 C-1.2,2.2 -2.2,1.2 -9,0 C-2.2,-1.2 -1.2,-2.2 0,-9 Z" fill="#9ca3af"/>
+  <text x="204" y="382" font-size="15" font-weight="600" fill="#111827" text-anchor="middle">무엇을 도와드릴까요?</text>
+
+  <!-- suggestion chips -->
+  <rect x="64" y="412" width="136" height="34" rx="17" fill="#ffffff" stroke="#d1d5db"/>
+  <text x="132" y="434" class="chip">💡 아이디어 얻기</text>
+  <rect x="212" y="412" width="132" height="34" rx="17" fill="#ffffff" stroke="#d1d5db"/>
+  <text x="278" y="434" class="chip">✍️ 글쓰기 도움</text>
+  <rect x="64" y="454" width="132" height="34" rx="17" fill="#ffffff" stroke="#d1d5db"/>
+  <text x="130" y="476" class="chip">📄 문서 요약</text>
+  <rect x="208" y="454" width="148" height="34" rx="17" fill="#ffffff" stroke="#d1d5db"/>
+  <text x="282" y="476" class="chip">🧭 여행 계획 짜기</text>
+
+  <!-- future conversation area hint -->
+  <rect x="64" y="560" width="280" height="120" rx="12" fill="none" stroke="#d1d5db" stroke-dasharray="5 4"/>
+  <text x="204" y="614" font-size="11" fill="#b3b9c2" text-anchor="middle">대화가 시작되면</text>
+  <text x="204" y="632" font-size="11" fill="#b3b9c2" text-anchor="middle">말풍선이 여기에 쌓입니다</text>
+
+  <!-- input bar -->
+  <rect x="52" y="726" width="304" height="52" rx="26" fill="#f3f4f6" stroke="#e5e7eb"/>
+  <circle cx="80" cy="752" r="14" fill="#ffffff" stroke="#9ca3af" stroke-width="1.2"/>
+  <line x1="74" y1="752" x2="86" y2="752" stroke="#6b7280" stroke-width="1.6" stroke-linecap="round"/>
+  <line x1="80" y1="746" x2="80" y2="758" stroke="#6b7280" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="104" y="757" class="pg">무엇이든 물어보세요</text>
+  <text x="284" y="758" font-size="14">🎤</text>
+  <circle cx="330" cy="752" r="14" fill="#111827"/>
+  <rect x="323" y="748" width="3" height="9" rx="1.5" fill="#ffffff"/>
+  <rect x="328.5" y="745" width="3" height="15" rx="1.5" fill="#ffffff"/>
+  <rect x="334" y="748" width="3" height="9" rx="1.5" fill="#ffffff"/>
+
+  <!-- home indicator -->
+  <rect x="164" y="786" width="80" height="4" rx="2" fill="#d1d5db"/>
+
+  <!-- in-phone badges -->
+  <g>
+    <circle cx="98" cy="150" r="9" fill="#2563eb"/><text x="98" y="154" class="bnum">1</text>
+    <circle cx="266" cy="150" r="9" fill="#2563eb"/><text x="266" y="154" class="bnum">2</text>
+    <circle cx="324" cy="132" r="9" fill="#2563eb"/><text x="324" y="136" class="bnum">3</text>
+    <circle cx="204" cy="516" r="9" fill="#2563eb"/><text x="204" y="520" class="bnum">4</text>
+    <circle cx="62" cy="722" r="9" fill="#2563eb"/><text x="62" y="726" class="bnum">5</text>
+    <circle cx="204" cy="718" r="9" fill="#2563eb"/><text x="204" y="722" class="bnum">6</text>
+    <circle cx="346" cy="722" r="9" fill="#2563eb"/><text x="346" y="726" class="bnum">7</text>
+  </g>
+
+  <!-- legend -->
+  <g>
+    <circle cx="430" cy="128" r="10" fill="#2563eb"/><text x="430" y="132" class="num">1</text>
+    <text x="450" y="132" class="h">사이드바 열기 (≡)</text>
+    <text x="450" y="152" class="d">대화 기록 · 프로젝트 · 설정으로 가는 문</text>
+    <text x="450" y="168" class="d">왼쪽 → 오른쪽 스와이프로도 열림</text>
+
+    <circle cx="430" cy="218" r="10" fill="#2563eb"/><text x="430" y="222" class="num">2</text>
+    <text x="450" y="222" class="h">모델 선택</text>
+    <text x="450" y="242" class="d">어떤 모델 · 응답 방식으로 답할지 선택</text>
+    <text x="450" y="258" class="d">평소엔 자동이라 상단에 두어도 충분</text>
+
+    <circle cx="430" cy="308" r="10" fill="#2563eb"/><text x="430" y="312" class="num">3</text>
+    <text x="450" y="312" class="h">새 채팅</text>
+    <text x="450" y="332" class="d">언제든 새 주제로 시작</text>
+    <text x="450" y="348" class="d">자주 쓰는 버튼 — 오른손 엄지 근처</text>
+
+    <circle cx="430" cy="398" r="10" fill="#2563eb"/><text x="430" y="402" class="num">4</text>
+    <text x="450" y="402" class="h">제안 프롬프트</text>
+    <text x="450" y="422" class="d">'뭘 물어봐야 하지?' — 빈 화면 문제를</text>
+    <text x="450" y="438" class="d">예시 버튼으로 해결</text>
+
+    <circle cx="430" cy="488" r="10" fill="#2563eb"/><text x="430" y="492" class="num">5</text>
+    <text x="450" y="492" class="h">첨부 (+)</text>
+    <text x="450" y="512" class="d">사진 · 카메라 · 파일을 올려서 질문</text>
+
+    <circle cx="430" cy="578" r="10" fill="#2563eb"/><text x="430" y="582" class="num">6</text>
+    <text x="450" y="582" class="h">입력창</text>
+    <text x="450" y="602" class="d">항상 하단 고정 — 엄지가 가장 편한 곳</text>
+
+    <circle cx="430" cy="668" r="10" fill="#2563eb"/><text x="430" y="672" class="num">7</text>
+    <text x="450" y="672" class="h">음성 모드</text>
+    <text x="450" y="692" class="d">누르면 음성 대화 화면(S3)으로 전환</text>
+  </g>
+</svg>
