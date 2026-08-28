@@ -1,6 +1,6 @@
 # Claude 분석 — IA · User Flow · Wireframe
 
-> **분석 대상**: Claude 모바일 앱 (Anthropic) · 2026년 8월 기준
+> **분석 대상**: Claude 앱 (Anthropic) — 데스크톱(claude.ai) · 모바일 · 2026년 8월 기준
 > 화면을 만들기 전에 정하는 세 가지를, 순서대로 Claude에 적용해 분석했습니다.
 
 | 순서 | 이름 | 우리말 | 답하는 질문 |
@@ -86,7 +86,17 @@ flowchart LR
 
 ## 3. Wireframe — 화면 뼈대
 
-그림 속 파란 번호(①②③…)와 오른쪽 설명이 짝을 이룹니다.
+그림 속 파란 번호(①②③…)와 설명이 짝을 이룹니다.
+
+### 데스크톱 — 컴퓨터로 볼 때
+
+<p align="center"><img src="./wireframes/pc-01-home.svg" width="780" alt="D1 시작 화면(데스크톱) 와이어프레임"></p>
+
+<p align="center"><img src="./wireframes/pc-02-chatting.svg" width="780" alt="D2 대화 중(데스크톱) 와이어프레임"></p>
+
+<p align="center"><img src="./wireframes/pc-03-artifact.svg" width="780" alt="D3 아티팩트 분할 화면(데스크톱) 와이어프레임"></p>
+
+### 모바일 — 폰으로 볼 때
 
 <p align="center"><img src="./wireframes/01-home.svg" width="780" alt="W1 채팅 화면(빈 상태) 와이어프레임"></p>
 
@@ -98,4 +108,4 @@ flowchart LR
 
 ---
 
-화면·기능은 2026년 8월 Claude 모바일 앱 기준이며, 업데이트에 따라 세부 모습은 조금씩 달라질 수 있습니다.
+화면·기능은 2026년 8월 Claude 앱(데스크톱·모바일) 기준이며, 업데이트에 따라 세부 모습은 조금씩 달라질 수 있습니다.
